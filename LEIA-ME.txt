@@ -1,0 +1,29 @@
+FÁBRICA DE SITES — QUIZ + OFERTA
+=============================
+
+Arquivos: index.html (CSS, JS e imagem do topo embutidos) + pasta img/, com:
+  img/sites/  -> prints da vitrine "Sites que a IA montou"
+  img/donos/  -> mensagens dos donos de comércio
+  img/alunos/ -> prints das vendas dos alunos
+  video/      -> VSL da entrada (vsl-v5.mp4) e a capa dela (vsl-v5-capa.jpg)
+Suba tudo junto, mantendo as pastas img/ e video/ ao lado do index.html, em qualquer hospedagem
+(HostGator, Vercel, Netlify, Cloudflare Pages) como página inicial.
+Sem a pasta img/, os carrosséis aparecem com as imagens quebradas.
+
+ANTES DE PUBLICAR, edite no final do index.html o bloco "const CONFIG":
+  - checkout.completo  -> link do checkout de R$ 47
+  - checkout.basico    -> link do checkout de R$ 27
+  - precoSite          -> preço médio real que você cobra por site (hoje: 500)
+  - mensalidade        -> mensalidade real de manutenção (hoje: 60)
+  - vslCtaSegundo    -> segundo do VSL em que o botão de começar aparece (hoje: 91.6, início do pitch da v5).
+                       Se trocar o vídeo, ajuste. Use 0 para o botão ficar sempre visível.
+  - leadWebhook        -> opcional, só se for capturar dados
+
+Procure no arquivo os trechos entre colchetes, com borda amarela tracejada na tela, e troque
+pelos reais:
+  [PRINT DO SITE REAL 1..3], [MENSAGEM REAL DO DONO 1..3], [PRINT/MENSAGEM REAL DO ALUNO 1..3],
+  [PRINT DE COMPROVANTE 1..2], [SUA FOTO], [NOME QUE APARECE NO PIX],
+  [CONFIRMAR: plano pago necessário em cada IA?], [CONFIRMAR: funciona no celular?],
+  [E-MAIL DE SUPORTE DA MARCA], [CNPJ / NOME]
+
+Pixel da Meta: cole o código do pixel antes de </head>.
